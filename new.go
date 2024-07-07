@@ -5,7 +5,7 @@ import (
 	"github.com/nazarifard/gomap"
 )
 
-func NewMap[K StringKey, V any](engine MapEngine, options ...any) Map[K, V] {
+func NewMap[K comparable, V any](engine MapEngine, options ...any) Map[K, V] {
 	switch engine {
 	case GoMap:
 		// if len(options)>0 {

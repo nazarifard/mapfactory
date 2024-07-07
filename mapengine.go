@@ -1,9 +1,5 @@
 package mapfactory
 
-type StringKey interface {
-	~string
-}
-
 type MapEngine int
 
 const (
